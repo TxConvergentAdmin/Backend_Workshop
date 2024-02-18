@@ -70,7 +70,8 @@ function App() {
 
   return (
     <div style={{ maxWidth: '100vw', textAlign: 'center'}}>
-      <h1 style={{ textAlign: 'center' }}>Backend Workshop</h1>
+      <h1 style={{ textAlign: 'center' }}>Backend Workshop: To Do List
+      </h1>
       <form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}>
         <input type="text" value={text} onChange={handleChange} style={{ marginRight: '10px' }} />
         <button type="submit">Add Item</button>
