@@ -27,22 +27,14 @@ def get_items():
 def update_item(item_id):
     # data = request.get_json()
     # #TODO
-    data = request.get_json()
-    text = data.get('text')
-    for item in items:
-        if item['id'] == item_id:
-            item['text'] = text
-            return jsonify({'message': 'Item updated successfully', 'item': item})
-    return jsonify({'error': 'Item not found'}), 404
+    return
 
 # Delete operation
 @app.route('/items/<int:item_id>', methods=['DELETE'])
 def delete_item(item_id):
     # global items
     # #TODO
-    global items
-    items = [item for item in items if item['id'] != item_id]
-    return jsonify({'message': 'Item deleted successfully'})
+    return
 
 if __name__ == '__main__':
     app.run(debug=True)
